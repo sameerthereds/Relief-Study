@@ -1,0 +1,64 @@
+1) email_process.py
+    * extracts email to extract stressor,location and valence
+    * randomizes interventions
+    * send interventios to participants
+    * runs every 60 minutes
+
+2) credentials.py
+    * contains openai credentials and email details
+
+3) utils.py
+    * contains filenames and foldernames
+    * various utility functions
+
+4) share_stressors_remind.py
+    * reminds user for sharing stressors 
+    * runs every 3 days
+
+5) highlight_save.py 
+    * runs every wednesday
+    * remind participants to share last week memories
+
+6) highlight_save_endofpage.py
+    * extracts frequency of stressors from shared memories
+    * save in csv_files/stressors
+    * runs every day at night
+
+7) PSS_score.py
+    * calculates PSS score from exit survey
+
+8) weekly_visualization.py
+    * create visualization from weekly survey
+
+9) weekly_DAS_email.py
+    * sends visual data after weekly survey
+    * runs every 60 minutes
+
+10) weekly_survey.csv
+    * send weekly survey emails at 9 am every Sunday
+
+11) Participants/
+    a) UUID.py
+        * creates participants_details pickle
+    b) participants_timeline.py
+        * creates user timeline everyday
+        * runs every day at 1 am
+12) qualtrics/
+    a) qualtrics_debriefing.py
+        * Downloads qualtrics debriefing survey
+        
+    b) qualtrics_interventions.py
+        * Downloads qualtrics intervention survey
+        * Runs every night at 23
+
+    c) qualtrics_weekly_survey.py
+        * Downloads qualtrics debriefing survey
+        * Runs every 45 minutes
+
+13) data_analysis/graphs/user_data_analysis.py
+    * create dashboard of data so far 
+    * a cronjob command copies the output graph to deep learning web server
+
+
+
+
