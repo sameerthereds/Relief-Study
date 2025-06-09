@@ -7,6 +7,10 @@ This repository contains the **end-to-end automated system** designed for the **
 
 ## **⚙️ System Architecture**  
 
+
+
+![System Architecture](system.png)
+
 ### **1️⃣ Data Collection & Processing**  
 ✅ **Smartwatch & Manual Logging**  
 - Participants using the **CuesHub smartwatch** log **daily stressors**, including **stressor descriptions and locations**.  
